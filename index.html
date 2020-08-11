@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS properties</title>
+
+    <!-- include Roboto font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- include playfair display font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- material icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top-level">
+        <h1 class="alphabet"></h1>
+        <div class="counter">
+          <h2 class="counter-text"></h2>
+          <span class="material-icons" onclick="count('decrease')"
+            >keyboard_arrow_left</span
+          >
+          <span class="material-icons" onclick="count('increase')"
+            >keyboard_arrow_right</span
+          >
+        </div>
+      </div>
+      <div class="bottom-level"></div>
+    </div>
+
+    <!-- site.js -->
+    <script src="js/site.js"></script>
+  </body>
+</html>

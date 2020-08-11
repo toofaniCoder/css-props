@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffba08;
+}
+
+.wrapper {
+  padding: 0 60px;
+}
+.top-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alphabet {
+  font-size: 150px;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  color: #03071e;
+}
+.counter {
+  color: #fff;
+  text-align: center;
+}
+.counter-text {
+  font-size: 150px;
+  font-weight: 300;
+  color: #03071e;
+}
+.material-icons {
+  transition: all 0.6s;
+}
+.material-icons:hover {
+  cursor: pointer;
+  color: #03071e;
+}
+
+.bottom-level {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  line-height: 200%;
+  font-size: 22px;
+  color: #03071e;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-level {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bottom-level {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .counter-text {
+    font-size: 100px;
+  }
+}
